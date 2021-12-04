@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'components/custom_appbar.dart';
+import 'components/searchbar.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({ Key? key }) : super(key: key);
@@ -14,9 +15,16 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       body: SafeArea(child: Column(
-        children: [CustomAppBar()],
+        children: [
+          const CustomAppBar(),
+          const SearchBar(),
+          Row(
+            children: [
+
+            ],
+          )        
+        ],
       )),
     );
   }
 }
-
